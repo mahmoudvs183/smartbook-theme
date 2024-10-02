@@ -1,0 +1,186 @@
+body {
+    height: 1000px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*Start Nav*/
+nav {
+    background-color: #282828;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    margin: 10px;
+}
+
+nav ul li i {
+    color: white;
+}
+
+nav ul li .down, nav ul li a {
+    color: inherit;
+}
+
+nav ul li a, nav ul li a i {
+    transition: .5s;
+}
+
+nav ul li a:hover,
+nav ul li a:hover i {
+    color: #62ab00;
+}
+
+@media (max-width: 768px) {
+    nav ul li a span {
+        display: none;
+    }
+}
+
+/*End Nav*/
+
+/*Start Header*/
+header {}
+
+header .container .frist-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 20px 0;
+}
+
+header .frist-row .logo {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+header .frist-row .logo img {
+    cursor: pointer;
+}
+
+header .frist-row .logo .contact-num {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header .frist-row .logo .contact-num i {
+    font-size: 35px;
+    color: #62ab00;
+}
+
+header .frist-row ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .frist-row ul span {
+    color: #282828;
+}
+
+header .frist-row ul a i {
+    font-size: small
+}
+
+header .frist-row ul a span,
+header .frist-row ul a i {
+    transition: .5s;
+}
+
+header .frist-row ul a:hover,
+header .frist-row ul a:hover span,
+header .frist-row ul .active {
+    color: #62ab00;
+}
+
+header .Second-row {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+header .Second-row .category {
+    padding: 20px 40px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #eeeeee;
+}
+
+header .Second-row .search {
+    display: flex;
+    z-index: 2;
+}
+
+header .Second-row input {
+    border: 1px solid #eeeeee;
+    background: none;
+    padding: 20px 200px 20px 40px;
+}
+
+header .Second-row .search button {
+    background-color: #62ab00;
+    width: 130px;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-left: none;
+}
