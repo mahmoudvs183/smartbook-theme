@@ -1,5 +1,5 @@
 body {
-    height: 1000px;
+    height: 4000px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -268,7 +268,7 @@ header .Second-row .sign-cart .cart .num {
 
 header .Second-row .sign-cart .cart i {
     font-size: 40px;
-    color: #bd0018;
+    color: #62ab00;
 }
 
 header .Second-row .sign-cart .cart span {
@@ -281,10 +281,11 @@ header .Second-row .sign-cart .cart span {
 /*Start Main*/
 main {
     margin-top: 10px;
-    background-image: url("../images/main.webp");
-    background-size: cover;
-    height: 400px;
     position: relative;
+}
+
+main img {
+    width: 100%;
 }
 
 main i {
@@ -329,27 +330,19 @@ main .circles span {
 /*Start features*/
 
 .features {
-    background-color: #f9f9f9;
-    padding: 20px 0;
-    overflow: hidden;
-
+    padding: 20px 0 0 0;
 }
 
 .features .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-
+    gap: 28px;
 }
 
 .feature {
     background-color: white;
     border: 1px solid #e0e0e0;
     padding: 5px;
-
     display: flex;
     gap: 15px;
     align-items: center;
@@ -358,7 +351,6 @@ main .circles span {
 .feature i {
     font-size: 36px;
     color: #62ab00;
-    /* Adjust the icon color */
 }
 
 .feature .text {
@@ -388,4 +380,83 @@ main .circles span {
     .feature .text p {
         font-size: 12px;
     }
+}
+
+/*End Features*/
+
+/*Start Ads*/
+.ads {
+    padding-top: 25px;
+}
+
+.ads .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.ads img {
+    width: 100%;
+}
+
+.products {
+    padding-top: 85px;
+}
+
+.products .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products .products-header {
+
+    text-align: center;
+    display: flex;
+    border: 1px solid #e0e0e0;
+}
+
+.products .products-header span {
+    padding: 14px 28px;
+    font-weight: 600;
+
+}
+
+.products .products-header .two {
+    position: relative;
+}
+
+.products .products-header .two::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 1px;
+    background-color: #e0e0e0;
+    right: 0;
+    top: 16px;
+}
+
+.products .products-header .active {
+    border: 2px solid #62ab00;
+    color: #62ab00;
+    position: relative;
+}
+
+.products .products-header .active::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #62ab00 transparent transparent transparent;
+}
+
+.products .products-content {
+    width: 100%;
+    background-color: #bd0018;
+    height: 200px;
 }
