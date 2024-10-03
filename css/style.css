@@ -410,7 +410,7 @@ main .circles span {
 }
 
 .products .products-header {
-
+cursor: pointer;
     text-align: center;
     display: flex;
     border: 1px solid #e0e0e0;
@@ -479,6 +479,10 @@ main .circles span {
     font-size: 14px;
     color: #999;
     width: 183px;
+    transition: .5s;
+}
+.products-content .product a:hover{
+    color: black;
 }
 
 .products-content .product .product-name {
@@ -487,10 +491,15 @@ main .circles span {
     font-weight: 400;
     line-height: 20px;
     color: #282828;
+    transition: .5s;
+}
+.products-content .product .product-name:hover{
+    color: #62ab00;
 }
 
 .products-content .product img {
     width: 100%;
+    cursor: pointer;
 }
 
 .products-content .product .price .current-price {
@@ -515,6 +524,10 @@ main .circles span {
 
     .products-content .product {
         width: 100%;
+    }
+
+    .products-content .inactive {
+        display: none;
     }
 
     .products-content .product a {
