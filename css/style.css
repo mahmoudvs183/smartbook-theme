@@ -434,6 +434,13 @@ main .circles span {
     display: flex;
     border: 1px solid #e0e0e0;
 }
+/* Small */
+@media (max-width:492px) {
+    .products .products-header {
+        flex-direction: column;
+        width: 100%;
+    }
+}
 
 .products .products-header span {
     padding: 14px 28px;
@@ -728,7 +735,7 @@ main .circles span {
 /* Small */
 @media (max-width:492px) {
     .best-saller .content .module1 {
-        width: 330px;
+        width: 100%;
     }
 
     .best-saller .col .product {
@@ -895,6 +902,8 @@ main .circles span {
     }
 }
 
+/*End Ads*/
+/*Start Footer*/
 footer {
     margin-top: 50px;
 }
@@ -905,7 +914,6 @@ footer .footer-inner {
     font-size: 15px;
     background-color: #282828;
     text-align: center;
-
 }
 
 footer .footer-inner img {
@@ -920,3 +928,5 @@ footer .footer-inner .copyright {
 footer .footer-inner .copyright span {
     color: #62ab00;
 }
+
+/*End Footer*/
