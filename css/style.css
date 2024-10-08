@@ -579,7 +579,7 @@ main .circles span {
 }
 
 /* large */
-@media (min-width:451px) {
+@media (min-width:493px) {
     .products .products-content {
         height: 780px;
         overflow: hidden;
@@ -624,10 +624,12 @@ main .circles span {
     flex-direction: column;
 }
 
-/* Small */
 @media (max-width:492px) {
     .offers .products-content {
-        height: 565px;
+        height: auto;
+    }
+    .offers .inactive{
+        display: none;
     }
 }
 
