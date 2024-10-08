@@ -94,7 +94,7 @@ nav ul li a:hover i {
 /*End Nav*/
 
 /*Start Header*/
-header {}
+
 
 header .container .frist-row {
     display: flex;
@@ -632,9 +632,9 @@ main .circles span {
 }
 
 /*End Offers*/
-/*start best-saller*/
+/*start best-seller-book*/
 
-.best-saller {
+.best-seller-book {
     background-image: url('../images/module.webp');
     background-size: contain;
     display: flex;
@@ -645,20 +645,20 @@ main .circles span {
 }
 
 @media (max-width: 1200px) {
-    .best-saller {
+    .best-seller-book {
         background-size: cover;
         padding-bottom: 40px;
     }
 }
 
-.best-saller h2 {
+.best-seller-book h2 {
     padding-top: 50px;
     padding-bottom: 20px;
     font-weight: 600;
     font-size: 18px;
 }
 
-.best-saller .content {
+.best-seller-book .content {
     display: flex;
     gap: 50px;
     padding: 30px;
@@ -667,54 +667,54 @@ main .circles span {
 
 }
 
-.best-saller .content .product-text {
+.best-seller-book .content .product-text {
     line-height: 2;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.best-saller .content .module1 {
+.best-seller-book .content .module1 {
     width: 350px;
 }
 
-.best-saller .content .products-content {
+.best-seller-book .content .products-content {
     width: 100%;
     align-items: self-start;
 }
 
-.best-saller .content .products-content .col {
+.best-seller-book .content .products-content .col {
     width: calc((100% - 20px) /2);
 }
 
-.best-saller .col .product {
+.best-seller-book .col .product {
     display: flex;
     flex-direction: row;
     width: auto;
 }
 
-.best-saller .col .product img {
+.best-seller-book .col .product img {
     width: 120px;
 }
 
-.best-saller .products-content .product a {
+.best-seller-book .products-content .product a {
     width: auto;
     text-align: left;
 }
 
 @media (max-width: 1200px) {
-    .best-saller .inactive {
+    .best-seller-book .inactive {
         display: none;
     }
 
-    .best-saller .content .products-content .col {
+    .best-seller-book .content .products-content .col {
         width: 100%;
     }
 
 }
 
 @media (max-width: 991px) {
-    .best-saller .content {
+    .best-seller-book .content {
         flex-direction: column;
         align-items: center;
     }
@@ -723,11 +723,11 @@ main .circles span {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .best-saller .inactive {
+    .best-seller-book .inactive {
         display: block;
     }
 
-    .best-saller .content .products-content .col {
+    .best-seller-book .content .products-content .col {
         width: calc((100% - 20px) /2);
     }
 
@@ -735,24 +735,62 @@ main .circles span {
 
 /* Small */
 @media (max-width:492px) {
-    .best-saller .content .module1 {
+    .best-seller-book .content .module1 {
         width: 100%;
     }
 
-    .best-saller .col .product {
+    .best-seller-book .col .product {
         gap: 0;
     }
 
-    .best-saller .content {
+    .best-seller-book .content {
         padding: 30px 15px;
         gap: 15px;
     }
 }
 
 
+/*Start best-sellers */
+.best-sellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.best-sellers h2 {
+    padding-top: 75px;
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    font-size: 20px;
+}
+
+.best-sellers h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #62ab00;
+    width: 131px;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+@media (min-width: 495px) {
+    .best-sellers .products-content {
+        height: 385px;
+        overflow: hidden;
+    }
+}
+
+
 
 .video {
-    padding-top: 75px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -904,9 +942,58 @@ main .circles span {
 }
 
 /*End Ads*/
+/*CHILDREN’S BOOKS*/
+
+.childern-books .products-content {
+    width: 100%;
+
+    gap: 15px;
+    height: 330px;
+    overflow: hidden;
+}
+
+.childern-books .products-content .col {
+    width: 365px;
+}
+
+.childern-books .col .product {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.childern-books .col .product img {
+    width: 120px;
+}
+
+.childern-books .products-content .product a {
+    width: auto;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .childern-books .products-content .col {
+        width: calc((100% - 15px)/2);
+    }
+
+}
+
+@media (max-width: 510px) {
+    .childern-books .products-content .col {
+        width: 100%;
+    }
+}
+
+/* Small */
+@media (max-width:492px) {
+    /* .childern-books .col .product {
+        gap: 0;
+    } */
+}
+
+
 /*start Banner*/
 .banner {
-    margin-top: 50px;
     position: relative;
 }
 
@@ -937,7 +1024,7 @@ main .circles span {
 }
 
 .banner .banner-content h2 {
-    color: #fff;
+    color: #ffffff;
     font-size: 30px;
     padding-bottom: 5px;
     font-weight: 500;
