@@ -120,6 +120,11 @@ header .frist-row .logo .contact-num {
     font-size: 16px;
     font-weight: 600;
 }
+header .frist-row .logo .contact-num .support{
+    color: #666666;
+    font-weight: 500;
+    font-size: 13px;
+}
 
 header .frist-row .logo .contact-num i {
     font-size: 35px;
@@ -628,7 +633,8 @@ main .circles span {
     .offers .products-content {
         height: auto;
     }
-    .offers .inactive{
+
+    .offers .inactive {
         display: none;
     }
 }
@@ -922,11 +928,6 @@ main .circles span {
         max-width: 50%;
     }
 
-    .ads .ads2 .ads-content p,
-    .ads .ads2 .ads-content h2 {
-        margin: 0;
-    }
-
     .ads .ads2 .ads-content p {
         font-size: 4vw;
     }
@@ -1053,12 +1054,14 @@ main .circles span {
         font-size: 2.5vw;
     }
 }
+
 @media (max-width: 450px) {
-    .banner .banner-content h1 {    
+    .banner .banner-content h1 {
         font-size: 6vw;
     }
+
     .banner .banner-content h2 {
-                font-size: 4vw;
+        font-size: 4vw;
     }
 }
 
@@ -1076,10 +1079,11 @@ main .circles span {
         font-size: 2.5vw;
     }
 }
+
 /* Small */
 @media (max-width: 768px) {
-    .banner{
-        height:150px;
+    .banner {
+        height: 150px;
     }
 }
 
